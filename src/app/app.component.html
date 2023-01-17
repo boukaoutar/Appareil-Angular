@@ -6,6 +6,20 @@
 
 <br>
 
+<!-- FOR -->
+<h2> FOR : </h2>
 <div *ngFor="let item of items" >
     {{ item.name }}
 </div>
+
+<!-- FOR 2 -->
+<h2> FOR with index : </h2>
+<div *ngFor="let item of items; let index = index" >
+    Index : {{ index }} // {{ item.name }}
+</div>
+
+<!-- FOR 3 -->
+<h2> FOR with index (last/first) : </h2>
+<div *ngFor="let item of items; let index = index; let last = last; let first = first" >
+    Index : {{ index }} // {{ item.name }} ---> <b> First : </b> {{ first }} ---> <b> Last : </b> {{ last }}
+</div><b>
